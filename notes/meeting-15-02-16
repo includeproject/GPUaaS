@@ -1,0 +1,32 @@
+
+## Meeting Minutes
+
+- Presention of project members
+  - Erick Cardona
+    - In France 1 year (Linux Administration)
+    - OpenStack, Containers, Xen, KVM (preferred)
+    - OpenStack with Toluca's team	
+  - Ricardo
+    
+  - Obed
+    
+  
+- About the project
+  - on README.md
+
+- Issues dynamic
+  - Yes  
+ 
+- Xeon Phi Status (Request)
+  - Pending
+
+- Current Tasks
+  - OpenStack on Vagrant/VirtualBox
+    - Using Puppet
+  - Take a look on Heterogneous GPU Accelerator 
+
+- (LABSOL) Current Hardware availability
+  - No GPUs this moment
+
+- AR
+  - Erick: Talk with Manuel about getting a GPU
