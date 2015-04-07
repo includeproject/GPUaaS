@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.box = "puppetmaster"
+
+  # Turn off shared folders
+  config.vm.synced_folder ".", "/vagrant", id: "vagrant-root", disabled: true
+
+  # Puppet-Master Node
+  config.vm.define "puppet" do |puppet_config|
+    puppet_config.vm.network "private_network", ip: "10.0.0.9"
+    puppet_config.vm.provider "virtualbox" do |v|
+        v.gui = true
+        v.customize ["modifyvm", :id, "--memory", "512"]
+        v.customize ["modifyvm", :id, "--cpus", "1"]
+    end
+  end
+end
