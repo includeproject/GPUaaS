@@ -31,11 +31,11 @@ cat > /etc/hosts <<EOF
 10.0.0.9 puppet.includep.org
 
 # controller node
-10.0.0.11
+10.0.0.11 controller.includep.org controller
 # network node
-10.0.0.21
+10.0.0.21 network.includep.org network
 # compute node
-10.0.0.31
+10.0.0.31 compute.includep.org compute
 EOF
 
 cp /tmp/network-config/$HOST/* /etc/sysconfig/network-scripts
